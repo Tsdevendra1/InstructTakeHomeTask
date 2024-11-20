@@ -27,8 +27,7 @@ Features implemented:
     - If mac: `brew install uv`
     - If mac/linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - Install dependencies `uv sync`
-- Activate virtual environment `source .venv/bin/activate`
-- Run application: `pytest .`
+- Run application: `uv run --env-file .env pytest .`
 
 # Project structure
 
