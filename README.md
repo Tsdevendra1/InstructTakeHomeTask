@@ -1,5 +1,6 @@
 # How to run the application
 
+- First clone the repo `git clone https://github.com/Tsdevendra1/InstructTakeHomeTask.git`
 - Update `OPENAI_API_KEY` in the .env file with the key
 - Build the image `docker build -t fastapi-app .`
 - Run the image `docker run --env-file .env -p 8000:8000 fastapi-app`
