@@ -12,7 +12,7 @@
 I tried to structure the project in a way that I would for a production application. I completed all the tasks apart
 from the one for rate limiting, but this was just because I wasn't sure if you were fine with using a library for that
 or whether you wanted me to implement it myself. I've tried to outline my decisions in the code itself. I also made some
-assumptions like only support the english language for the scraping service. 
+assumptions like only support the english language for the scraping service. Commit history also isn't as clean as I would like but I tried to make it as clear as possible.
 
 Features implemented:
 - Basic authentication
