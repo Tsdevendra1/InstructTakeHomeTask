@@ -2,7 +2,7 @@
 
 - Update `OPENAI_API_KEY` in the .env file with the key
 - Build the image `docker build -t fastapi-app .`
-- Run the image `docker run -p 8000:8000 fastapi-app`
+- Run the image `docker run --env-file .env -p 8000:8000 fastapi-app`
 - Ask API: `curl -X POST http://0.0.0.0:8000/ask -H "Content-Type: application/json" -u admin:secret123 -d '{"url":"https://en.wikipedia.org/wiki/Battle_of_Hastings","question":"Where was the battle of hastings?"}'`
 - Scrape API: `curl -X POST http://0.0.0.0:8000/scrape -H "Content-Type: application/json" -u admin:secret123 -d '{"url":"https://en.wikipedia.org/wiki/Battle_of_Hastings"}'`
 - If you want to test yourself the credentials for the basic auth are `admin:secret123`
