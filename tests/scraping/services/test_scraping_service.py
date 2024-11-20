@@ -61,7 +61,7 @@ class TestWebscrapeURL:
 
 class TestExtractDataFromHTML:
     def test_real_world_example(self) -> None:
-        with open("/Users/tharukadevendra/PycharmProjects/InstructTakeHomeTask/tests/fixtures/nico-ditch.html") as f:
+        with open("tests/fixtures/nico-ditch.html") as f:
             html = f.read()
 
         response = extract_data_from_html(html)
